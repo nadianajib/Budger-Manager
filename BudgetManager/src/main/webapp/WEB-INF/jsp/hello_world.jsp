@@ -1,5 +1,10 @@
+
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Spring MVC Demo</title>
+</head>
 <body>
-<h2>Hello World kj !</h2>
+<h2>${message}</h2>
 </body>
 </html>
