@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestion de Transactions</title>
-    <link rel="stylesheet" href="transaction.css">
+    <title>Gestion de Budget</title>
+    <link rel="stylesheet" href="budg.css">
 </head>
 <body>
 <div class="container">
-    <h1>Gestion de Transactions</h1>
+    <h1>Gestion de Budget</h1>
+    <div class="balance">
+        <h2>Solde Total: <span id="balance">0.00 €</span></h2>
+    </div>
     <form id="transaction-form">
+        <label for="type">Type:</label>
+        <select id="type" name="type" required>
+            <option value="revenu">Revenu</option>
+            <option value="dépense">Dépense</option>
+        </select>
+
         <label for="category">Catégorie:</label>
         <select id="category" name="category" required>
             <option value="alimentation">Alimentation</option>
@@ -32,6 +41,7 @@
     <table id="transaction-table">
         <thead>
         <tr>
+            <th>Type</th>
             <th>Catégorie</th>
             <th>Montant (€)</th>
             <th>Date</th>
@@ -42,6 +52,6 @@
         </tbody>
     </table>
 </div>
-<script src="transaction.jsp"></script>
+<script src="budg.js"></script>
 </body>
 </html>
